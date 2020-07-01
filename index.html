@@ -3,30 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/BMI Calculator/style.css" />
     <title>BMI Calculator</title>
   </head>
   <body>
-    <h1>BMI Calculator</h1>
-    <label for="height">Height in meters</label><br /><br />
-    <input
-      name="height"
-      id="height"
-      type="number"
-      placeholder="Enter your height"
-    />
-    <br /><br />
-    <label for="weight">Weight in kg</label><br />
-    <br />
-    <input
-      name="weight"
-      id="weight"
-      type="number"
-      placeholder="Enter your weight"
-    />
-    <br />
-    <br />
-    <button onclick="bmicalc()">Calculate your BMI</button> <br /><br />
-    <hr />
+    <h1 id="main-title">Body Mass Index (BMI) Calculator</h1>
+    <div class="user-input">
+      <label for="height">Height in meters</label><br /><br />
+      <input
+        name="height"
+        id="height"
+        type="number"
+        placeholder="Enter your height"
+      />
+    </div>
+
+    <div class="user-input">
+      <label for="weight">Weight in kg</label><br />
+      <br />
+      <input
+        name="weight"
+        id="weight"
+        type="number"
+        placeholder="Enter your weight"
+      />
+    </div>
+
+    <button onclick="bmicalc()">Calculate your BMI</button>
+
     <p id="yourbmi"></p>
     <script src="/BMI Calculator/bmi.js"></script>
   </body>

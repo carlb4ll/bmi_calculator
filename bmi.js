@@ -23,3 +23,7 @@ function bmicalc() {
       "Your BMI is " + roundbmi + " You are classed as morbidly obese";
   }
 }
+
+// BMI = 703 ×
+// your weight in pounds
+// ( your height in inches ) ²
