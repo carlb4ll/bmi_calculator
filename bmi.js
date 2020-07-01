@@ -1,10 +1,10 @@
 function bmicalc() {
-  var feet = document.getElementById("feet").value;
-  var inches = document.getElementById("inches").value;
-  var stone = document.getElementById("stone").value;
-  var pounds = document.getElementById("pounds").value;
-  var totalInches = parseInt(feet) * 12 + parseInt(inches);
-  var totalPounds = parseInt(stone) * 14 + parseInt(pounds);
+  var feet = +document.getElementById("feet").value;
+  var inches = +document.getElementById("inches").value;
+  var stone = +document.getElementById("stone").value;
+  var pounds = +document.getElementById("pounds").value;
+  var totalInches = feet * 12 + inches;
+  var totalPounds = stone * 14 + pounds;
   var totalInchesSquared = Math.pow(totalInches, 2);
   var bmi = (totalPounds / totalInchesSquared) * 703;
   var roundbmi = Math.round(bmi * 10) / 10;
