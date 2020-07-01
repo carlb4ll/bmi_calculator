@@ -7,28 +7,36 @@
     <title>BMI Calculator</title>
   </head>
   <body>
-    <h1 id="main-title">Body Mass Index (BMI) Calculator</h1>
-    <form action="" id="bmi-input">
-      <div class="user-input">
-        <label for="height">Your height</label><br /><br />
-        <input name="height" id="feet" type="number" placeholder="ft" />
+    <header id="main-header">
+      <img src="/BMI Calculator/fitness-body-svgrepo-com.svg" alt="Logo" />
+      <h1 id="main-title">Body Mass Index (BMI) Calculator</h1>
+    </header>
+    <p class="subtitle">Calculate your Body Mass Index in an instant.</p>
+    <div class="container">
+      <div id="input-section">
+        <form action="" id="bmi-input">
+          <div class="user-input">
+            <label for="height">Your height</label><br /><br />
+            <input name="height" id="feet" type="number" placeholder="ft" />
 
-        <input name="height" id="inches" type="number" placeholder="in" />
+            <input name="height" id="inches" type="number" placeholder="in" />
+          </div>
+
+          <div class="user-input">
+            <label for="weight">Your weight</label><br />
+            <br />
+            <input name="weight" id="stone" type="number" placeholder="st" />
+
+            <input name="weight" id="pounds" type="number" placeholder="lbs" />
+          </div>
+        </form>
       </div>
-
-      <div class="user-input">
-        <label for="weight">Your weight</label><br />
-        <br />
-        <input name="weight" id="stone" type="number" placeholder="st" />
-
-        <input name="weight" id="pounds" type="number" placeholder="lbs" />
+      <div id="button-container">
+        <button onclick="bmicalc()">Calculate your BMI</button>
+        <button onclick="resetPage()">Reset</button>
+        <script src="/BMI Calculator/bmi.js"></script>
       </div>
-    </form>
-    <button onclick="bmicalc()">Calculate your BMI</button>
-
+    </div>
     <p id="yourbmi"></p>
-
-    <button onclick="resetPage()">Reset</button>
-    <script src="/BMI Calculator/bmi.js"></script>
   </body>
 </html>
