@@ -23,18 +23,9 @@ body {
 }
 .user-input input {
   margin: 1rem;
+  margin-right: 0.5rem;
   text-align: center;
-}
-/* Chrome, Safari, Edge, Opera */
-.user-input input::-webkit-outer-spin-button,
-.user-input input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-.user-input input[type="number"] {
-  -moz-appearance: textfield;
+  max-width: 100px;
 }
 
 button {

@@ -1,8 +1,12 @@
 function bmicalc() {
-  var personHeight = document.getElementById("height").value;
-  var personWeight = document.getElementById("weight").value;
-  var heightSquared = Math.pow(personHeight, 2);
-  var bmi = personWeight / heightSquared;
+  var feet = document.getElementById("feet").value;
+  var inches = document.getElementById("inches").value;
+  var stone = document.getElementById("stone").value;
+  var pounds = document.getElementById("pounds").value;
+  var totalInches = parseInt(feet) * 12 + parseInt(inches);
+  var totalPounds = parseInt(stone) * 14 + parseInt(pounds);
+  var totalInchesSquared = Math.pow(totalInches, 2);
+  var bmi = (totalPounds / totalInchesSquared) * 703;
   var roundbmi = Math.round(bmi * 10) / 10;
   var result = document.getElementById("yourbmi");
 
@@ -24,6 +28,13 @@ function bmicalc() {
   }
 }
 
+function resetPage() {
+  document.getElementById("bmi-input").reset();
+  document.getElementById("yourbmi").innerHTML = "";
+}
+
 // BMI = 703 ×
-// your weight in pounds
+// your weight in pounds DIVIDE
 // ( your height in inches ) ²
+
+// BMI = [Weight (lbs) / Height (inches)²] x 703

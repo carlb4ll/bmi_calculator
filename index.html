@@ -8,30 +8,29 @@
   </head>
   <body>
     <h1 id="main-title">Body Mass Index (BMI) Calculator</h1>
-    <div class="user-input">
-      <label for="height">Height in meters</label><br /><br />
-      <input
-        name="height"
-        id="height"
-        type="number"
-        placeholder="Enter your height"
-      />
-    </div>
+    <form action="" id="bmi-input">
+      <div class="user-input">
+        <label for="height">Your height</label><br /><br />
+        <input name="height" id="feet" type="number" />
+        ft
+        <input name="height" id="inches" type="number" value="0" />
+        in
+      </div>
 
-    <div class="user-input">
-      <label for="weight">Weight in kg</label><br />
-      <br />
-      <input
-        name="weight"
-        id="weight"
-        type="number"
-        placeholder="Enter your weight"
-      />
-    </div>
-
+      <div class="user-input">
+        <label for="weight">Your weight</label><br />
+        <br />
+        <input name="weight" id="stone" type="number" />
+        st
+        <input name="weight" id="pounds" type="number" value="0" />
+        lbs
+      </div>
+    </form>
     <button onclick="bmicalc()">Calculate your BMI</button>
 
     <p id="yourbmi"></p>
+
+    <button onclick="resetPage()">Reset</button>
     <script src="/BMI Calculator/bmi.js"></script>
   </body>
 </html>
