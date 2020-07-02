@@ -31,12 +31,14 @@
           </div>
         </form>
       </div>
-      <div id="button-container">
-        <button onclick="bmicalc()">Calculate your BMI</button>
-        <button onclick="resetPage()">Reset</button>
-        <script src="/BMI Calculator/bmi.js"></script>
-      </div>
+
+      <button onclick="bmicalc()">Calculate your BMI</button>
+      <p id="yourbmi"></p>
+      <p id="category"></p>
     </div>
-    <p id="yourbmi"></p>
+    <div class="container">
+      <button id="reset" onclick="resetPage()">Reset</button>
+    </div>
+    <script src="/BMI Calculator/bmi.js"></script>
   </body>
 </html>
