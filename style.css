@@ -19,7 +19,7 @@ body {
   height: 100vh;
   width: 40%;
   margin: auto;
-  border: solid 5px black;
+  overflow: auto;
 }
 
 #main-header {
@@ -27,7 +27,6 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  border: 5px solid red;
 }
 #main-title {
   font-size: 2rem;
@@ -52,8 +51,6 @@ img {
   align-items: center;
   justify-content: center;
   margin: 2rem;
-
-  border: 5px solid green;
 }
 .user-input input {
   margin: 1rem;
@@ -72,11 +69,11 @@ input:focus {
 
 label {
   font-size: 1.5rem;
+  margin-right: 1rem;
 }
 
 button {
   display: block;
-
   text-align: center;
   padding: 1rem;
   border-radius: 10px;
@@ -113,7 +110,6 @@ button:focus {
   margin-bottom: 1rem;
   background-color: #c4c4c4;
   color: #000;
-  border: solid 5px blue;
 }
 
 /* media queries */

@@ -1,0 +1,53 @@
+/* Mobile styles */
+
+@media all and (max-width: 500px) {
+  #main-title {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+  label {
+    font-size: 1.5rem;
+  }
+  .user-input {
+    margin: 0.5rem;
+  }
+  .user-input input {
+    max-width: 70px;
+    border-radius: 5px;
+    width: 60%;
+  }
+  button {
+    width: 95%;
+  }
+  #input-section {
+    width: 95%;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media all and (max-width: 370px) {
+  #main-title {
+    font-size: 1.2rem;
+    padding: 0.2rem;
+    margin-top: 1rem;
+  }
+  label {
+    font-size: 1rem;
+  }
+  .user-input {
+    margin: 0.2rem;
+  }
+  .user-input input {
+    max-width: 60px;
+    border-radius: 5px;
+    width: 50%;
+  }
+  button {
+    font-size: 1rem;
+  }
+  .subtitle {
+    font-size: 0.7rem;
+  }
+}
