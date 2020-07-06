@@ -27,12 +27,12 @@ BMI weight categories:
 
 Based on your height and weight, you will be assigned to one of the following weight categories:
 
-Underweight - BMI less than 18.5
+- Underweight - BMI less than 18.5
 
-Normal healthy weight - BMI between 18.5 and 24.9
+- Normal healthy weight - BMI between 18.5 and 24.9
 
-Overweight - BMI between 25.0 and 29.9
+- Overweight - BMI between 25.0 and 29.9
 
-Obese - BMI between 30.0 and 39.9
+- Obese - BMI between 30.0 and 39.9
 
-Morbidly obese – BMI 40.0 and above
+- Morbidly obese – BMI 40.0 and above
